@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="description" content="キーワードに関連したYOUTUBE上の動画を検索できます。">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="script/jquery.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="script/autolink.js"></script>
+        <script type="text/javascript" src="script/jquery.bottom-1.0.js"></script>
+        <script type="text/javascript" src="script/myQue.js"></script>
+		<script type="text/javascript" src="script/ytsearch.js"></script>
+       
+		<title>Youkoso</title>
+	</head>
+    
+	<body>
+		<div id="wrap">
+			<h1>Youkoso</h1>
+			<a id="videoTitle"><br></a>
+			<div id="content">
+				<div id="left">
+               		<a id="sResult">キーワードに関連した動画を検索できます。</a>
+					<div id="yt_sea"></div>
+				</div>
+				<div id="cent">
+					<div id="videoFrame">
+                    
+                  		<form id="searchBox">
+                            <input type="text"  id="keyIn" class="textBox" value="" placeholder=" 関連する文字" maxlength="100">
+                            <input type="text"  id="dKeyIn" class="textBox" value="" placeholder=" 除外する文字" maxlength="50">
+                            <input type="submit" class="button" id="sbutton" value="search">
+                        </form>
+						
+						<div id="videoDiv"></div>
+                        <nav>
+							<button id="backb" class="apear_button">←</button>
+                            <button id="nextb" class="apear_button">→</button>
+						</nav>
+					</div>
+					<div id="videoProperty"><p>　データ API を使用すると、YouTube の機能をアプリケーションやウェブサイトに組み込むことができます。検索、動画のアップロード、再生リストの作成などさまざまな操作を実現できます。</p></div>
+					<div id="commentFrame"></div>
+				</div>
+				<div id="right">
+                <ul id="FilterList">
+                     		<li>
+                            	<button class="button filter" id="hdButton">HD</button>
+                            </li>
+                        	<li name="orderby"><button class="button filter" id="soButton">Orderby</button>
+                        		<ul class="sub">
+                        			<li><a class="filter_selected" >Relevance</a></li>
+                        			<li><a >Published</a></li>
+                                    <li><a >ViewCount</a></li>
+                                    <li><a >Rating</a></li>
+                        		</ul>
+                        	</li>
+                            <li name="time"><button class="button filter" id="tiButton">Time</button>
+                        		<ul class="sub">
+                        			<li><a class="filter_selected">All Time</a></li>
+                                    <li><a >Month</a></li>
+                                    <li><a >Week</a></li>
+                                    <li><a >Today</a></li>
+                        		</ul>
+                        	</li>
+                            <li name="category" ><button class="button filter" id="caButton">Category</button>
+                        		<ul class="sub">
+                        			<li><a class="filter_selected">Music</a></li>
+                                    <li><a >Entertain</a></li>
+                                    <li><a >Autos</a></li>
+                                    <li><a >Sports</a></li>
+                                    <li><a >Film&Anime</a></li>
+                                    <li><a >Gaming</a></li>
+                                    <li><a >Comedy</a></li>
+                                    <li><a >Pets</a></li>
+                                    <li><a >Science</a></li>
+                                    <li><a >Howto</a></li>
+                        		</ul>
+                        	</li>
+                            
+                         </ul>
+					<div id="yt_rel"></div>
+				</div>
+			
+			</div>
+		</div>
+	</body>
+
+</html>
